@@ -9,5 +9,5 @@ Their requirements were:
 * there should be a search field (search for title only) above the item list, that updates the item list responsively
 * on the same page (either next to it on the right or below the shopping list in a fixed container) there should be an overview over the current cart with: the amount of products you put in the cart, by product - as well as the total price
 * items should be able to be removed from the cart individually
-* an option to sort the articles ascending by price
+* an option to sort the articles by price
 
