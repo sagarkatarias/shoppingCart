@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Shopping cart</title>
+    <link rel="stylesheet" href="app.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>&#128722;Shopping Cart &#128722;</h1>
+        <div id="searchContainer">
+            <input type="text" name="searchBar" id="searchBar" placeholder="search for a item" />
+            <button onclick="sortUp()">Sort &#x2191;</button>
+            <button onclick="sortDown()">Sort &#x2193;</button>
+        </div>
+        <ul id="itemsList"></ul>
+        <h1>&#128722;Cart Overview &#128722;</h1>
+        <div id="cart" class="cartContainer"></div>
+        <div id="overview" class="cartContainer"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

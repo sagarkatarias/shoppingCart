@@ -1,0 +1,146 @@
+body {
+    font-family: sans-serif;
+    background-color: #0e8181;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #eee;
+    margin-bottom: 30px;
+}
+
+.container {
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+#itemsList {
+    padding-inline-start: 0;
+    display: grid;
+    grid-gap: 20px;
+}
+
+.item {
+    list-style-type: none;
+    background-color: #eaeaea;
+    border-radius: 3px;
+    grid-template-areas: 'myArea myArea myArea myArea';
+    grid-auto-columns: 1fr;
+    padding: 10px 20px;
+    display: grid;
+    text-align: left;
+}
+
+.item > h2 {
+    justify-self: left;
+    
+}
+
+.item > p {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.item > img {
+    max-height: 100px;
+}
+
+.item > button {
+    max-height: 40px;
+    justify-self: center;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 28px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.item > button:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+
+#searchBar {
+    width: 87%;
+    height: 32px;
+    border-radius: 3px;
+    border: 1px solid #eaeaea;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+#searchContainer {
+    position: relative;
+}
+
+#searchContainer > button {
+    height: 32px;
+    cursor: pointer;
+}
+
+#searchContainer::after {
+    content: '🔍';
+    position: absolute;
+    top: 7px;
+    right: 120px;
+}
+
+.cartContainer {
+    padding-inline-start: 0;
+    display: grid;
+    grid-gap: 20px;
+    background-color: #eaeaea;
+    border-radius: 3px;
+}
+
+.cartItem {
+    grid-template-areas: 'myArea myArea myArea myArea';
+    grid-auto-columns: 1fr;
+    padding: 10px 20px;
+    display: grid;
+    text-align: left;
+}
+
+.cartItem > img {
+    max-height: 100px;
+}
+
+.cartItem > p {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.cartItem > button {
+    max-height: 40px;
+    justify-self: center;
+    text-transform: uppercase;
+    letter-spacing: 1 px;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 28px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.cartItem > button:hover {
+    background-color: #eb1111;
+    box-shadow: 0px 15px 20px rgba(229, 46, 46, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
